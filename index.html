@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159953126-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-159953126-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Aviothic 1.0, Hackathon conducted by Kanpur Institute Of Technology">
+    <meta name="keywords" content="Aviothic 1.0, Kanpur Institute Of Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Aviothic 1.0</title>
+    <link rel="icon" href="200.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/css/main.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 2px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            box-shadow: inset 0 0 3px grey;
+            background: #CC753F;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(211, 112, 51);
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
+        .teams {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .teams .shadow-effect {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #ECECEC;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        #customers-teams .item {
+            height: 500px !important;
+            text-align: center;
+            padding: 50px;
+            margin-bottom: 40px;
+            opacity: .2;
+            -webkit-transform: scale3d(0.8, 0.8, 1);
+            transform: scale3d(0.8, 0.8, 1);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #customers-teams .item p {
+            font-size: 12px;
+        }
+
+        #customers-teams .item h2 {
+            font-size: 28px !important;
+            font-weight: 500 !important;
+        }
+
+        #customers-teams .item .title {
+            font-size: 14px;
+        }
+
+        #pastexp {
+            margin-top: 20px;
+        }
+
+        #customers-teams .item h5 {
+            font-size: 15px !important;
+            font-weight: 700 !important;
+        }
+
+        #customers-teams .owl-item.active.center .item {
+            opacity: 1;
+            -webkit-transform: scale3d(1.0, 1.0, 1);
+            transform: scale3d(1.0, 1.0, 1);
+        }
+
+        .teams .owl-carousel .owl-item .img-circle {
+            transform-style: preserve-3d;
+            max-width: 170px;
+            margin: 0 auto 17px;
+            transition: transform .5s;
+        }
+
+        .teams .owl-carousel .owl-item .img-circle:hover {
+            transform: scale(0.9);
+        }
+
+        #teamsocial {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 10px auto;
+            margin-top: 20px;
+        }
+
+        #teamsocial #socialicon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin: 0 0.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.4rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+        }
+
+        #teamsocial #socialicon:hover {
+            font-size: 1.5rem;
+            color: #CC753F;
+            transition: 0.3s ease;
+        }
+    </style>
+    <style>
+        .testimonials {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            position: relative;
+            display: block;
+            width: 100%;
+            min-height: 250px;
+        }
+
+        .testimonials ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .testimonials li {
+            display: inline-block;
+            background-color: white;
+            margin: 50px 10px 10px 10px;
+            width: calc((100% - 70px) / 3);
+            height: 300px;
+            border: solid 1px #bdbdbd;
+            position: relative;
+            transition: ease-in-out .3s;
+        }
+
+        .testimonials li img {
+            height: 70px;
+            width: 70px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 15px #fff;
+            background-color: #fff;
+            transition: box-shadow 0.3s linear;
+        }
+
+        .testimonials li p {
+            position: absolute;
+            width: 70%;
+            text-align: center;
+            top: 50px;
+            left: 50%;
+            transform: translatex(-50%);
+            font-size: 15px;
+        }
+
+        .testimonials li h1 {
+            position: absolute;
+            text-decoration: bold;
+            bottom: 10px;
+            left: 50%;
+            transform: translatex(-50%);
+            font-size: 17px;
+        }
+
+        .testimonials li:hover {
+            background-color: #212121;
+            color: #fff;
+        }
+
+        .testimonials li:hover img {
+            box-shadow: 0px 0px 0px 2px #fff;
+        }
+
+        @media only screen and (max-width: 860px) {
+            .testimonials li {
+                width: 70%;
+                margin: auto;
+                display: block;
+                margin-top: 70px;
+            }
+
+            .testimonials li:first-child {
+                margin-top: 50px;
+            }
+        }
+
+        .container_testi {
+            display: block;
+            width: 70%;
+            margin: auto;
+            height: 100%;
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 750px) {
+            .container_testi {
+                width: 90%;
+            }
+        }
+
+        .container_testi h1,
+        h2,
+        h3 {
+            margin-top: 15px;
+            margin-left: 0;
+            font-weight: 400;
+        }
+
+        .container_testi span {
+            color: #757575;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body style="user-select: none;">
+    <div class="loader bg-black">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+    </div>
+    <!--header start here -->
+    <header class="header navbar fixed-top navbar-expand-md"
+        style="background-color: rgba(0, 0, 0, 0.753); margin-top: 0;">
+        <div class="container" style="height: auto;">
+            <a class="navbar-brand logo" href="#"><img alt="Hack-in-the-West" src="HackLogo.png"></a> <button
+                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#headernav"
+                data-toggle="collapse" style="padding-top: 15px; margin-bottom: 25px;" type="button"><span
+                    class="lnr lnr-text-align-right"></span></button>
+            <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+                <ul class=" nav navbar-nav menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tracks">Tracks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prize">Prize</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://forms.gle/vPcoyKjRhD1sUNye8">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--header end here-->
+    <!--cover section slider -->
+    <section class="home-cover" id="home">
+        <div class="cover_slider owl-carousel owl-theme">
+
+            <!-- Slide one starts here -->
+            <div class="cover_item" style="background: url('cover.jpg');">
+                <div class="slider_content">
+                    <div class="slider-content-inner">
+                        <div class="container">
+                            <div class="slider-content-center">
+                                <h2 class="cover-title" style="color: white;font-size:2em;font-weight:bold">
+                                    Ready to Hack beyond Boundaries ?
+                                </h2>
+                                <strong class="cover-xl-text" style="color: black;">Aviothic 1.0</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide one end here -->
+
+            <!-- Slide Two starts here -->
+            <div class="cover_item" style="background: url('cover.jpg');">
+                <div class="slider_content">
+                    <div class="slider-content-inner">
+                        <div class="container">
+                            <div class="slider-content-center">
+                                <h2 class="cover-title">
+                                    Let hacking be the culture!!
+                                </h2>
+                                <strong class="cover-xl-text" style="color: black;">Aviothic 1.0</strong>
+                                <p class="cover-date" style="font-weight: bold;color: white;">
+                                    Never limit your aspirations
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide Two ends here -->
+
+            <!-- Slide three starts here -->
+            <div class="cover_item" style="background: url('cover.jpg');">
+                <div class="slider_content">
+                    <div class="slider-content-inner">
+                        <div class="container">
+                            <div class="slider-content-center"
+                                style="background: url('home.png');height:200px; background-size: cover; background-position: center; padding: 10px; border: 1px solid white; border-radius: 10px;">
+                            </div>
+                            <div class="slider-content-center">
+                                <div>
+                                    <a href="https://discord.gg/PwGkUW5s"><button class="discord mt20"
+                                            style="letter-spacing:1px;background-color:#000000be;font-size:15px; color: white;padding: 10px 10px 10px 10px; border:2px sowhite; border-radius:10px;width:30%;">
+                                            Discord
+                                        </button> </a>
+                                    <a href="https://chat.whatsapp.com/JxwHbEOT4uY2hKWqv92B9O"><button
+                                            class="whatsapp mt20"
+                                            style="margin-left:70px; letter-spacing:1px;background-color:#000000be;font-size:15px; color: white;padding: 10px 10px 10px 10px; border:2px sowhite; border-radius:10px;width:30%;">
+                                            Whatsapp
+                                        </button> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide three ends here -->
+        </div>
+        </div>
+    </section>
+    <!--cover section slider end -->
+    <!--event info -->
+    <section class="locate_date">
+        <div class="container">
+            <div class="row justify-content-center pb-5" style="height: 50px;">
+                <div class="col-6 col-md-2" data-aos="zoom-in-down">
+                    <div class="icon_box_two">
+                        <i class="ion-ios-calendar-outline"></i>
+                        <div class="content">
+                            <h5 class="box_title">DATE</h5>
+                            <p>29 May 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2" data-aos="zoom-in-down">
+                    <div class="icon_box_two">
+                        <i class="ion-ios-location-outline"></i>
+                        <div class="content">
+                            <h5 class="box_title">Location</h5>
+                            <p>Kanpur Institute Of Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--event info end -->
+    <!--about the event && tracks -->
+    <section class="pt100 pb100" id="about">
+        <div class="container">
+            <div class="section_title">
+                <h3 class="title" data-aos="zoom-in-right">Aviothic</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6" data-aos="zoom-in-right">
+                    <p style="text-align: justify;color:#ffffff; text-justify: inter-word">Welcome to Aviothic 1.0 <br>
+                        A 12-hour hackathon that brings together programmers, designers, and inventors to collaborate on
+                        coding,
+                        designing, and building inventive and promising solutions to address real-world issues<br>
+                        This is a venue for self-expression and creativity through technology.</p>
+                </div>
+                <div class="col-12 col-md-6" data-aos="zoom-in-left">
+                    <p style="text-align: justify;color:#ffffff; text-justify: inter-word"><br>
+                        Whether a person is creating their first app or their hundredth,
+                        there is always a lot to learn. This presents an opportunity for programmers to enhance their
+                        technical skills and
+                        develop their ability to think creatively, regardless of their level of experience.<br>
+                        The only limitation is the amount of time available to them!</p><br>
+                    <br>
+                </div>
+                <h4>This year let the hacking be the culture...</h4>
+            </div><br id="tracks"><br><br><br><br>
+            <div class="section_title" id="tracks">
+                <h3 class="title">
+                    Themes
+                </h3>
+            </div>
+            <div class="row justify-content-center mt-3" style="cursor: pointer;">
+                <div data-aos="fade-up" class="col-5 col-md-2 col-lg-2">
+                    <div class="content d-flex align-items-center justify-content-center p-5">
+                        <a href="tracks.html#ai">
+                            <h4>Artificial Intelligence</h4>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-5 col-md-2 col-lg-2">
+                    <div class="content d-flex align-items-center justify-content-center p-5">
+                        <a href="tracks.html#qualityeducation">
+                            <h4>Quality Education</h4>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-5 col-md-2 col-lg-2">
+                    <div class="content d-flex align-items-center justify-content-center p-5">
+                        <a href="tracks.html#openInov">
+                            <h4>Open Innovation</h4>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-5 col-md-2 col-lg-2">
+                    <div class="content d-flex align-items-center justify-content-center p-5">
+                        <a href="tracks.html#cybersecurity">
+                            <h4>Cyber Security</h4>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-5 col-md-2 col-lg-2">
+                    <div class="content d-flex align-items-center justify-content-center p-5">
+                        <a href="tracks.html#MentalHealth">
+                            <h4>Mental Health</h4>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-5 col-md-2 col-lg-2">
+                    <div class="content d-flex align-items-center justify-content-center p-5">
+                        <a href="tracks.html#Productivit">
+                            <h4>Productivity</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--tracks end-->
+    </section>
+    <!-- testinomials starts -->
+    <!-- <section class="pb100" id="testinomials">
+        <br><br><br><br>
+        <div class="container">
+            <div class="section_title">
+                <h3 class="title">Testinomials</h3>
+            </div>
+        </div>
+        <div class="container_testi">
+            <div class="testimonials">
+                <ul>
+                    <li>
+                        <img src="team.jpg">
+                        <p>"Integer in cursus massa. Curabitur viverra, libero sed eleifend pellentesque, metus quam
+                            commodo lorem, ut laoreet ipsum metus ac augue."</p>
+                        <h1>Martin Kovaks</h1>
+                    </li>
+                    <li>
+                        <img src="team.jpg">
+                        <p>"Sed vitae augue arcu. In pharetra ultricies mi eget interdum. Donec feugiat, orci at
+                            mattis
+                            laoreet, mauris mauris interdum arcu, ac viverra nibh purus a eros."</p>
+                        <h1>Adrea Glauber</h1>
+                    </li>
+                    <li>
+                        <img src="team.jpg">
+                        <p>"Sed vitae augue arcu. In pharetra ultricies mi eget interdum. Donec feugiat, orci at
+                            mattis
+                            laoreet, mauris mauris interdum arcu, ac viverra nibh purus a eros."</p>
+                        <h1>Adrea Glauber</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <!-- testinomials ends -->
+    <br>
+    <!-- meet the team starts-->
+    <section class="pb100" id="team">
+        <br><br><br><br>
+        <div class="container">
+            <div class="section_title">
+                <h3 class="title" data-aos="zoom-in-right">Meet Our Team</h3>
+            </div>
+            <div class="row justify-content-center no-gutters owl-carousel" id="customers-teams">
+                <div class="item">
+                    <div class="shadow-effect">
+                        <img class="img-circle" style="height: 250px; width:400px" src="shivanshkumar.jpg">
+                        <h2>Shivansh Kumar</h2>
+                        <div id="pastexp">
+                            <p>B.Tech CSE - 3rd Year</p>
+                            <p style="color: whitesmoke;">Android Developer
+                            </p>
+                            <p style="margin-top:-5px;color: whitesmoke;">Kanpur Institute of Technology (KIT) Kanpur
+                            </p>
+                        </div>
+                        <div class="social-icons" id="teamsocial">
+                            <a class="ion-social-linkedin" id="socialicon"
+                                href="https://www.linkedin.com/in/shivansh-kumar-492b3021b/">
+                            </a>
+                            <a class="ion-social-github" id="socialicon" href="https://github.com/CodeXstalker">
+                            </a>
+                            <a class="ion-social-twitter" id="socialicon" href="https://twitter.com/codeXstalker">
+                            </a>
+                        </div> <!--Social Icons End Here-->
+                    </div>
+                </div>
+                <!--END OF team 1 -->
+                <!--team 2 -->
+                <div class="item">
+                    <div class="shadow-effect">
+                        <img class="img-circle" style="height: 250px; width:400px" src="aryangupta.jpg">
+                        <h2>Aryan Gupta</h2>
+                        <div id="pastexp">
+                            <p>B.Tech CSE - 2nd Year</p>
+                            <p style="margin-top:-5px;color: whitesmoke;">Web-App Developer
+                            </p>
+                            <p style="color: whitesmoke;">Kanpur Institute of Technology (KIT) Kanpur
+                            </p>
+                        </div>
+                        <div class="social-icons" id="teamsocial">
+                            <a class="ion-social-linkedin" id="socialicon"
+                                href="https://www.linkedin.com/in/aryan-kumar-418975237">
+                            </a>
+                            <a class="ion-social-github" id="socialicon" href="https://github.com/N16H7H4WK-3R">
+                            </a>
+                            <a class="ion-social-twitter" id="socialicon"
+                                href="https://www.instagram.com/aryankumar8146/">
+                            </a>
+                        </div> <!--Social Icons End Here-->
+                    </div>
+                </div>
+                <!--END OF team 2 -->
+                <!--team 3 -->
+                <div class="item">
+                    <div class="shadow-effect">
+                        <img class="img-circle" style="height: 250px; width:400px" src="ayushyadav.jpg">
+                        <h2>Ayush Yadav</h2>
+                        <div id="pastexp">
+                            <p>B.Tech CSE - 2nd Year</p>
+                            <p style="color: whitesmoke;">Android Developer
+                            </p>
+                            <p style="margin-top:-5px;color: whitesmoke;">Kanpur Institute of Technology (KIT) Kanpur
+                            </p>
+                        </div>
+                        <div class="social-icons" id="teamsocial">
+                            <a class="ion-social-linkedin" id="socialicon" href="#">
+                            </a>
+                            <a class="ion-social-github" id="socialicon" href="#">
+                            </a>
+                            <a class="ion-social-twitter" id="socialicon" href="#">
+                            </a>
+                        </div> <!--Social Icons End Here-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- meet the team ends -->
+    <!-- prizes -->
+    <h1 id="prize"></h1>
+    <div class="container">
+        <br>
+        <br>
+        <div class="section_title mb50">
+            <h3 class="title">Prizes</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center mt30 ml50 mr50 pb100" data-aos="fade-up">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="icon_box_one" style="border-radius: 10px;">
+                <div class="content" style="text-align: center!important">
+                    <h4 class="pt-3"> <i class="ion-tshirt"></i> T-shirts</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="icon_box_one" style="border-radius: 10px;">
+                <div class="content" style="text-align: center!important">
+                    <h4 class="pt-3"> <i class="ion-trophy"></i> INR 10,000</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="icon_box_one" style="border-radius: 10px;">
+                <div class="content" style="text-align: center!important">
+                    <h4 class="pt-3"> <i class="ion-bug"></i> Stickers</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="icon_box_one" style="border-radius: 10px;">
+                <div class="content" style="text-align: center!important">
+                    <h4 class="pt-3"> <i class="ion-document"></i>Certificates</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--price section end -->
+    <!--faq section -->
+    <section class="bg-black pt100 pb100" id="faq" style="background-color: black;">
+        <div class="container">
+            <div class="section_title mb50">
+                <h3 class="title" style="color: #CC753F;">Frequently asked questions</h3>
+                <div class="faq bg-black">
+                    <div class="accordion" style="margin-left: 2em">
+                        <div class="row">
+                            <div class="col-sm">
+                                <ul>
+                                    <li>
+                                        <button class="accordion-control frequent\">Who can participate?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            As long as you are a student of KIT college and 18 years older, you are
+                                            invited to apply for Aviothic.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">When will the application close?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            The application process will close on 27th March.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">How does the application process
+                                            work?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            We’re looking for people who "do"! Folks who are passionate enough to work
+                                            on crazy world-changing ideas. Think of real time industrial problem which
+                                            can have a huge impact in everyone's daily life. Tell us how you plan to
+                                            solve the problem. We’ll get to know more about your abilities from the past
+                                            projects, GitHub profile, participation/awards in other hackathons.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">How much does it cost?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            INR 100 per Team. We'll provide you with a weekend's worth of
+                                            schwag, drinks, snacks and a place to crash when you need a break from
+                                            coding.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">Can we participate as a team?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            Yes! This hackathon is strictly a team competition. We believe that you’re
+                                            stronger as a team. The team size for Aviothic is 2-4 members per
+                                            team. Most teams aim to have a mix of people with both design and developer
+                                            skills.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">What if I do not have a team?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            Not to worry, most people don’t! We’ll have team formation community on
+                                            Whatsapp / Discord geared
+                                            towards helping you find people to work with.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm">
+                                <ul>
+                                    <li>
+                                        <button class="accordion-control">Once I am selected what am I suppose to
+                                            bring?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            A valid photo ID issue by the college, laptop, phone, chargers, spike
+                                            guards, any stationery required.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">Do you provide travel reimbursement?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            Unfortunately, no. We may start reimbursements from the next edition. Stay
+                                            tuned!
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">How does judging work?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            A panel of some of the biggest names in tech will evaluate hacks based on
+                                            creativity, technical difficulty, design, and usefulness. New judges will be
+                                            announced on a rolling basis on Instagram, LinkedIn and Twitter, so make
+                                            sure to follow us!
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">What do I get by attending
+                                            Aviothic 1.0</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            Pretty much everything, from socializing with fellow hacker community to
+                                            internship/job offers from the coolest tech companies. And yeah we'll have
+                                            prizes for finalist teams and many other sponsored prizes.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">Whom do I contact for more
+                                            information?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            Feel free to reach out at <a
+                                                href="mailto:cybersrishti.aviothic+query@gmail.com"
+                                                style="color: #CC753F">ContacUs </a>for any doubts,
+                                            queries or helps. You can also reach out at us on <a href=""
+                                                style="color: #CC753F">Discord</a>.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="accordion-control">What are the tracks this year?</button>
+                                        <div class="accordion-panel bg-black" style="color: white">
+                                            1) Mobile App Development.<br>2) Web Development. <br>3) Game Development.
+                                            <br>4) Internet Of Things.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq sections ends -->
+    <!-- code of conduct starts -->
+    <section class="bg-img" style="background-image: url('warriors.jpg'); padding-top: 200px; padding-bottom: 200px;">
+        <div class="container">
+            <div class="col-sm-2 text-center"
+                style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                <a class="btn btn-primary btn-rounded mt30"
+                    style="background-color:#f6df69;font-weight:bold;color:black" href="codeOfConduct.html">Code Of
+                    Conduct</a>
+            </div>
+        </div>
+    </section>
+    <!-- code of conducts ends -->
+    <!--footer start -->
+    <div class="copyright_footer bg-black">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 mt-3">
+                    <div class="footer_menu"
+                        style="left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); color:white">
+                        Created by <a href="https://n16h7h4wk-3r.github.io/portfolio/"
+                            style="color: red; letter-spacing:1px " target="_blank"> &copy; Aryan Gupta </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script src="assets/js/jquery.min.js">
+    </script>
+    <!-- bootstrap -->
+    <script src="assets/js/popper.js">
+    </script>
+    <script src="assets/js/bootstrap.min.js">
+    </script>
+    <script src="assets/js/waypoints.min.js">
+    </script>
+    <!--slick carousel -->
+    <script src="assets/js/owl.carousel.min.js">
+    </script>
+    <!--parallax -->
+    <script src="assets/js/parallax.min.js">
+    </script>
+    <!--Counter up -->
+    <script src="assets/js/jquery.counterup.min.js">
+    </script>
+    <!--Counter down -->
+    <script src="assets/js/jquery.countdown.min.js">
+    </script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js">
+    </script>
+    <!-- Custom js -->
+    <script src="assets/js/main.min.js">
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://unpkg.com/aos%402.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>
+    <script>
+        $('#customers-teams').owlCarousel({
+            loop: true,
+            center: true,
+            items: 3,
+            margin: 0,
+            autoplay: true,
+            dots: true,
+            autoplayTimeout: 3500,
+            checkVisibility: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1170: {
+                    items: 3
+                }
+            },
+            onInitialized: zoomImage,
+            onChanged: zoomImage
+        });
+
+        function zoomImage(event) {
+            var currentItem = event.item.index;
+            var $image = $(event.target).find('.owl-item').eq(currentItem).find('img');
+            $image.css('transform', 'scale(0.9)');
+            $image.css('transition', '0.5s ease');
+            $image.css('border-radius', '8px');
+        }
+
+    </script>
+</body>
+
+</html>
